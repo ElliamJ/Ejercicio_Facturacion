@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sistema de Facturación"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del cliente"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtRncCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RNC / Cédula"
+            android:inputType="text"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/edtNombreCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del cliente"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnRegistrarCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar cliente"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del producto"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp" />
+
+        <EditText
+            android:id="@+id/edtProductoId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID del producto"
+            android:inputType="number"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/edtCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cantidad"
+            android:inputType="number"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/btnBuscarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar producto"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Producto: "
+            android:textSize="17sp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio: "
+            android:textSize="17sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stock disponible: "
+            android:textSize="17sp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: RD$ 0.00"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnRegistrarFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar factura"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnGenerarPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generar recibo PDF"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
